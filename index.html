@@ -13,33 +13,36 @@
 </head>
 <body>
   <!-- your content here... -->
-  <div style="font-family: sans-serif;">
-    <h1 id="title">Title</h1>
-    <h2>Smaller Title</h2>
+  <div id="navbar">
+    <div id="navbar-left-side">
+      <img id="house-icon" src="https://static.thenounproject.com/png/423483-200.png" />
+      <h1 id="top-title">Broccoli Generator</h1>
+    </div>
   </div>
-  <h6>Smallest Title</h6>
-  <p>This is a paragraph</p>
-  <a href="https://www.google.com">This is a link</a>
-  <button>Click me</button>
-
-  <ul>
-    <li>Bullet point 1</li>
-    <li>number 2</li>
-  </ul>
-
-  <ol>
-    <li>Bullet point 1</li>
-    <li>number 2</li>
-  </ol>
-
-  <div id="box">
-
+  <button id="broccoli-giver" onclick="grabBroccoli()">Give me broccoli!</button>
+  <div id="broccoli-holder">
+    <img id="broccoli">
   </div>
 
-  <form>
-    <input />
-    <button>Submit!!</button>
+  <hr />
+
+  <h4>Broccoli Table</h4>
+  <form id="myForm">
+    <input name="column1" />
+    <input name="column2" />
+    <input name="column3" />
+
+    <input type="submit">
   </form>
-  <script src="js/scripts.js"></script>
+
+  <table id="myTable">
+    <tr>
+      <th>Broccoli ID</th>
+      <th>Broccoli Name</th>
+      <th>Broccoli Color</th>
+    </tr>
+  </table>
+
+  <script src="js/index.js"></script>
 </body>
 </html>
